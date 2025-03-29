@@ -29,6 +29,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'type', // 👈 Este é o campo que define o tipo de usuário
     ];
 
     /**
@@ -64,4 +65,5 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    
 }

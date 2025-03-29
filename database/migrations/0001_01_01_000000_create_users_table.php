@@ -21,6 +21,9 @@ return new class extends Migration
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();
             $table->timestamps();
+            // 👇 Este é o campo que define o tipo de usuário
+            $table->enum('type', ['company', 'courier'])->default('courier');
+
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
@@ -37,6 +40,8 @@ return new class extends Migration
             $table->longText('payload');
             $table->integer('last_activity')->index();
         });
+
+
     }
 
     /**
