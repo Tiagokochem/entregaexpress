@@ -4,7 +4,7 @@ Sistema de gerenciamento de entregas, onde empresas podem cadastrar entregas e e
 
 ## 🔧 Tecnologias
 
-- Laravel 10 + Jetstream (Inertia.js)
+- Laravel 12 + Jetstream (Inertia.js)
 - Vue 3 + Tailwind CSS
 - MySQL + Redis + Docker (via Sail)
 
